@@ -26,3 +26,7 @@ Route::group(['prefix' => 'admin'], function () {
 
 // Wave routes
 Wave::routes();
+
+// App routes
+Route::get('phpinfo', '\App\Http\Controllers\PhpInfoController@index');
+
